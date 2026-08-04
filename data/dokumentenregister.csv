@@ -1,0 +1,2 @@
+datei_id,dateiname,eingang_am,dokumenttyp,dokumentdatum,absender,betrag,referenz,status,pruefhinweis
+beispiel-001,beispiel-rechnung.pdf,2026-08-04,Rechnung,2026-08-01,Beispiel Lieferant,1250.00,RE-2026-001,zu_pruefen,Anonymisierter Beispielwert
