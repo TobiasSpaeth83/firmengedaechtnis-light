@@ -1,0 +1,25 @@
+# Zugangsdaten — niemals hochladen
+.env
+.env.*
+*credentials*
+*zugangsdaten*
+*passwoerter*
+
+# Echte Dokumente gehoeren nicht ins Repository
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.xlsx
+*.xls
+*.ods
+*.docx
+
+# Laufzeit-Ausgaben der Routinen
+routinen/log.txt
+berichte/
+
+# System
+Thumbs.db
+desktop.ini
+.DS_Store
