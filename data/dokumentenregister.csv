@@ -1,2 +1,4 @@
-datei_id,dateiname,eingang_am,dokumenttyp,dokumentdatum,absender,betrag,referenz,status,pruefhinweis
-beispiel-001,beispiel-rechnung.pdf,2026-08-04,Rechnung,2026-08-01,Beispiel Lieferant,1250.00,RE-2026-001,zu_pruefen,Anonymisierter Beispielwert
+datei_id,dateiname,quelle,eingang_am,verarbeitet_am,dokumenttyp,dokumentdatum,absender,kommission,betrag_netto,betrag_brutto,referenz,verglichen_mit,vergleich_ergebnis,abweichung,status,pruefhinweis,abgelegt_unter
+a1b2c3d4,2026-08-12_Rechnung_Beispiel-Lieferant_K-2026-041.pdf,mail,2026-08-12,2026-08-13,Rechnung,2026-08-11,Beispiel Lieferant,K-2026-041,1050.42,1250.00,RE-2026-001,AB vom 2026-07-30,ok,0.00,ok,,Kommission/K-2026-041/Rechnungen
+e5f6a7b8,2026-08-12_Rechnung_Beispiel-Geraete_K-2026-039.pdf,mail,2026-08-12,2026-08-13,Rechnung,2026-08-10,Beispiel Geraete GmbH,K-2026-039,2100.84,2500.00,RE-2026-002,AB vom 2026-06-15,abweichung,120.00,abweichung,Rechnung 120.00 hoeher als letzte AB - bitte pruefen,Kommission/K-2026-039/Rechnungen
+c9d0e1f2,2026-08-13_Scan_unbekannt_ohne-komm.pdf,scan,2026-08-13,2026-08-13,unklar,,,,,,,,,,zu_pruefen,Kommissionsnummer nicht gefunden und Kundenname nicht eindeutig,00-Manuell-pruefen
