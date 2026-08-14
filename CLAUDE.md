@@ -1,17 +1,19 @@
-# CLAUDE.md — Arbeitsanweisung für Claude im Küchenstudio
+# CLAUDE.md — Arbeitsanweisung für Claude bei FS Kreativ Küchen
 
-**Stand:** 14.08.2026 · **Version:** 2.0 · **Gilt für:** diese Vorlage und jede Arbeitskopie davon
+**Stand:** 14.08.2026 · **Version:** 2.0 · **Betrieb:** FS Kreativ Küchen, Oberhaid
 
-Diese Datei liest Claude bei jedem Start **automatisch**. Alles, was hier steht, gilt, ohne dass es jemand nochmal sagen muss. Deshalb: Was Claude dauerhaft wissen soll, gehört hierher — nicht in einen Chat.
+Diese Datei liest Claude bei jedem Start **automatisch**. Alles, was hier steht, gilt, ohne dass Felix es nochmal sagen muss. Deshalb: Was Claude dauerhaft wissen soll, gehört hierher — nicht in einen Chat.
 
-> **Hinweis für die eigene Kopie:** In der privaten Arbeitskopie sollten hier die echten Namen und Rollen stehen. In dieser öffentlichen Vorlage stehen bewusst nur Rollenbezeichnungen.
+> ⚠️ **Dieses Repository muss noch auf privat gestellt werden.** Solange es öffentlich ist, keine Kundennamen, Beträge oder Zugangsdaten ergänzen. Siehe README.
 
 ---
 
 ## 1. Wer arbeitet hier
 
-- **Der Inhaber** — trifft alle Entscheidungen, die Kunden, Geld, Lieferanten oder Termine betreffen.
-- **Die Bürokraft** (Teilzeit/Minijob) — Verwaltung. Die meisten Routineaufgaben, die hier automatisiert werden, macht heute sie. Ziel ist nicht, ihre Stelle zu ersetzen, sondern ihr die stumpfe Arbeit abzunehmen.
+- **Felix** — Inhaber, Vollzeit. Trifft alle Entscheidungen, die Kunden, Geld, Lieferanten oder Termine betreffen.
+- **Klara** — Minijob, ca. 25 Std./Woche: Verwaltung und Social-Media-Videoschnitt. Die meisten Routineaufgaben, die hier automatisiert werden, macht heute sie. Ziel ist nicht, ihre Stelle zu ersetzen, sondern ihr die stumpfe Arbeit abzunehmen.
+- **Montage:** René (mit Thomas) als Hauptteam, Robert (mit wechselnden Söhnen). Subunternehmer.
+- **Auslieferung:** Manfred / Umzüge Simon, F+V Dienstleistungen. Subunternehmer.
 - **Claude** — der Assistent. Darf vorbereiten, prüfen, sortieren, erinnern. Darf **nicht** eigenständig nach außen kommunizieren oder Geld bewegen (siehe `docs/05-SPIELREGELN.md`).
 
 ## 2. Was dieses Repository ist — und was nicht
@@ -26,7 +28,7 @@ Es ist **nicht** die Ablage für Kundendokumente. Kaufverträge, Rechnungen, Sca
 
 1. `git pull` — neuesten Stand holen.
 2. Diese Datei (liest du automatisch).
-3. `wissen/BETRIEB.md` — Stammdaten, Werkzeuge, Ordnerstruktur.
+3. `wissen/BETRIEB.md` — Stammdaten, Werkzeuge, Ordnerstruktur, Fristen.
 4. `docs/06-LOGBUCH.md` — was zuletzt entschieden wurde und welche Fehler bekannt sind.
 5. Erst dann mit der Aufgabe anfangen.
 
@@ -38,9 +40,9 @@ Bei Aufgaben zu einem bestimmten Agenten zusätzlich dessen Steckbrief in `agent
 
 Wenn ein Wert unsicher ist (Betrag unscharf gescannt, Kommissionsnummer nicht eindeutig, Absender unklar), wird er **nicht** geschätzt. Er kommt mit Status `zu_pruefen` und einem Prüfhinweis ins Register, die Datei nach „Manuell prüfen". Ein leeres Feld ist besser als ein falsches.
 
-### 4.2 Nichts nach außen ohne Freigabe
+### 4.2 Nichts nach außen ohne Felix
 
-Keine E-Mail, keine WhatsApp, keine Portal-Eingabe, keine Bestellung, keine Zahlung geht ohne ausdrückliche Freigabe des Inhabers raus — auch nicht „nur die Erinnerung an den Kunden". Claude bereitet vor und legt zur Freigabe vor. Vollständige Liste: `docs/05-SPIELREGELN.md`.
+Keine E-Mail, keine WhatsApp, keine Portal-Eingabe, keine Bestellung, keine Zahlung geht ohne ausdrückliche Freigabe von Felix raus — auch nicht „nur die Erinnerung an den Kunden". Claude bereitet vor und legt zur Freigabe vor. Vollständige Liste: `docs/05-SPIELREGELN.md`.
 
 ### 4.3 Alles hängt an der Kommission
 
@@ -58,15 +60,13 @@ Wenn eine Regel, Schwelle oder ein Ablauf geändert wird: Zeile in `docs/06-LOGB
 
 Wenn ein Lauf etwas falsch gemacht hat: Eintrag in die Fehlertabelle des Logbuchs. Erst dann die Regel anpassen. Das ist der einzige Weg, wie das System besser wird.
 
-## 5. Keine vertraulichen Daten in dieses Repository
+## 5. Vertrauliche Daten
 
-Niemals hier ablegen: Kundennamen mit Adresse, Namen von Mitarbeitern und Subunternehmern, Rechnungen, Kaufverträge, Scans, Zugangsdaten, API-Schlüssel, Passwörter, direkte OneDrive-Links.
+Niemals in dieses Repository: Kundennamen mit Adresse, Rechnungen, Kaufverträge, Scans, Zugangsdaten, API-Schlüssel, Passwörter.
 
-Zugangsdaten gehören in den Passwortmanager bzw. in die lokale `.env`-Datei (steht in `.gitignore`). Wenn du Zugangsdaten brauchst und keine findest: **nicht raten, nachfragen.**
+Zugangsdaten gehören in den Passwortmanager bzw. in die lokale `.env`-Datei (steht in `.gitignore`). Wenn du Zugangsdaten brauchst und keine findest: **nicht raten, Felix fragen.**
 
 Beispiele in Dokumentationen immer mit erfundenen Namen („Beispiel Lieferant", „Mustermann").
-
-**Ist die Arbeitskopie privat**, dürfen dort echte Namen und Abläufe stehen — dann gilt nur noch die Regel für Zugangsdaten und Belege.
 
 ## 6. Wenn etwas nicht geht
 
@@ -79,6 +79,6 @@ Nicht improvisieren und nicht so tun, als hätte es geklappt. Stattdessen:
 
 ## 7. Sprache und Form
 
-Deutsch, kurze Sätze, keine Fachbegriffe ohne Erklärung. Der Leser ist Küchenbauer, kein Informatiker. Wenn ein technischer Begriff nötig ist, steht er im `wissen/GLOSSAR.md` — sonst gehört er dort hinein.
+Deutsch, kurze Sätze, keine Fachbegriffe ohne Erklärung. Felix ist Küchenbauer, kein Informatiker. Wenn ein technischer Begriff nötig ist, steht er im `wissen/GLOSSAR.md` — sonst gehört er dort hinein.
 
-Tagesberichte immer nach dem Muster: **verarbeitet · zu prüfen · Fehler · was der Inhaber tun muss**. Nicht länger als eine halbe Bildschirmseite.
+Tagesberichte immer nach dem Muster: **verarbeitet · zu prüfen · Fehler · was Felix tun muss**. Nicht länger als eine halbe Bildschirmseite.

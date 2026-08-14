@@ -20,7 +20,7 @@ Werktags 10:00 Uhr über die Windows-Aufgabenplanung. Zusätzlich jederzeit von 
 3. **Kommission zuordnen.** Kommissionsnummer im Dokument suchen. Wenn nicht vorhanden: über Kundenname und Datum versuchen. Wenn nicht eindeutig → Status `zu_pruefen`.
 4. **Umbenennen** nach dem Schema:
    `JJJJ-MM-TT_Typ_Absender_Kommission.pdf`
-   Beispiel: `2026-08-12_Rechnung_Beispiel-Lieferant_K-2026-041.pdf`
+   Beispiel: `2026-08-12_Rechnung_Haecker_K-2026-041.pdf`
    Fehlt die Kommission: `_ohne-komm` statt der Nummer.
 5. **Ablegen:**
    - eindeutig zugeordnet → Kommissionsordner in OneDrive

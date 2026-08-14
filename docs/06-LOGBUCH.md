@@ -19,7 +19,7 @@ Was am Ablauf geändert wurde und warum. Die ersten Zeilen sind die Grundentsche
 | 2026-08-14 | Kein separates OCR-Werkzeug in Stufe 1 | Claude liest PDFs und Bilder direkt; ein Bauteil weniger, das ausfallen kann |
 | 2026-08-14 | Zugriff auf Mails per IMAP statt über die Dateien des Mailprogramms | ein Mailprogramm ist ein Anzeigeprogramm; Zugriff auf seine laufenden Datenbanken ist fehleranfällig |
 | 2026-08-14 | Rechnungsprüfung, Scan-Sortierung, Zubehör- und Lieferprüfung werden als **eine** Maschine gebaut | identischer Ablauf, nur andere Prüfregel und Zielordner |
-| 2026-08-14 | Arbeitskopie des Firmengedächtnisses muss privat sein; die Vorlage bleibt namensfrei | echtes Betriebswissen und Personennamen gehören nicht in ein öffentliches Repository |
+| 2026-08-14 | Repository enthält die konkreten Betriebsangaben und wird dafür auf privat gestellt | ein Gedächtnis ohne echte Namen, Lieferanten und Pfade ist nur eine Anleitung; Tobias-Entscheid 14.08. — **Umstellung auf privat steht noch aus** |
 | 2026-08-04 | Grundstruktur angelegt | gemeinsame Vorlage für Betriebswissen und Automatisierung |
 
 ---
@@ -36,12 +36,15 @@ Jeder Fehler, der im Betrieb auffällt. Auch die kleinen — die Häufung zeigt,
 
 ---
 
-## Offene Fragen an den Inhaber
+## Offene Fragen an Felix
 
 Fragen, die den Ablauf blockieren, bis sie beantwortet sind.
 
 | Seit | Frage | Warum es wichtig ist |
 |---|---|---|
+| 2026-08-14 | **Fristen-Wächter vorziehen?** Im Mai war das Kernproblem wörtlich „pünktlich bestellen, was 6–8 Wochen Lieferzeit hat" — in der Kandidatenliste steht es unter „später". | ein versäumter Bestelltermin kostet mehr als alle anderen Kandidaten zusammen einsparen |
 | 2026-08-14 | Wie sind die Kommissionsnummern aufgebaut? | ohne dieses Muster kann kein Dokument sicher zugeordnet werden |
 | 2026-08-14 | Läuft der Büro-PC werktags vormittags zuverlässig? | bestimmt, wann die Routine feuern kann |
 | 2026-08-14 | Ab welcher Abweichung soll eine Rechnung als auffällig gelten? | Vorschlag 2 €, gehört nach `wissen/BETRIEB.md` |
+| 2026-08-14 | Wer bekommt den Tagesbericht — Felix, Klara oder beide? | |
+| 2026-08-14 | Gibt Cyncly eine Schnittstelle zu CompuSoft Winner her? | schriftlich anfragen, bevor A11 verplant wird |

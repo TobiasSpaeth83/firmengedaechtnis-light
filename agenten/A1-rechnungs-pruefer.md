@@ -34,7 +34,7 @@ Werktags 10:00 Uhr, gemeinsam mit A2. Zusätzlich, sobald eine Rechnung im Herst
 
 ## Die Einschränkung bei der Einnahmen-Ausgaben-Liste
 
-Der Agent schreibt **nicht** direkt in die laufende Excel-Datei, während sie im Büro womöglich gerade geöffnet ist. Zwei Programme, die gleichzeitig in dieselbe Datei schreiben, führen zu verlorenen Zeilen — und das fällt bei einer Buchhaltungsliste erst Wochen später auf.
+Der Agent schreibt **nicht** direkt in die laufende Excel-Datei, während Klara oder Felix sie womöglich geöffnet haben. Zwei Programme, die gleichzeitig in dieselbe Datei schreiben, führen zu verlorenen Zeilen — und das fällt bei einer Buchhaltungsliste erst Wochen später auf.
 
 Stattdessen: Der Agent schreibt die fertigen Zeilen in eine Datei `00-Register\Nachtrag-JJJJ-MM.xlsx`, die einmal am Tag von Hand übernommen wird (kopieren, einfügen, fertig — zwei Minuten). Wenn sich das bewährt, kann man später über eine sauberere Lösung nachdenken.
 

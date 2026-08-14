@@ -1,10 +1,10 @@
-# Betriebsprofil
+# Betriebsprofil FS Kreativ Küchen
 
-**Zum Ausfüllen in der privaten Arbeitskopie.** In der öffentlichen Vorlage bleiben die Felder leer.
+Das ist die wichtigste Datei des ganzen Repositorys. Alles, was hier fehlt, muss Claude bei jedem Dokument neu erraten. Eine halbe Stunde Ausfüllen spart Wochen an Rückfragen.
 
-Das ist die wichtigste Datei des ganzen Repositorys. Alles, was hier fehlt, muss Claude bei jedem Dokument neu erraten. Eine halbe Stunde hier spart Wochen an Rückfragen.
+Vorausgefüllt ist, was aus der Kandidatenliste bekannt ist. **Felder mit `??` muss Felix ergänzen.**
 
-Am schnellsten im Gespräch ausfüllen: Claude starten und sagen *„Geh mit mir das Betriebsprofil durch und stell mir die Fragen einzeln."*
+Am schnellsten im Gespräch: Claude starten und sagen *„Geh mit mir das Betriebsprofil durch und stell mir die offenen Fragen einzeln."*
 
 ---
 
@@ -12,83 +12,108 @@ Am schnellsten im Gespräch ausfüllen: Claude starten und sagen *„Geh mit mir
 
 | Feld | Wert |
 |---|---|
-| Firmierung | |
-| Ort | |
-| Inhaber | |
-| Weitere Mitarbeiter und Aufgaben | |
-| Küchen pro Jahr (ungefähr) | |
-| Typischer Auftragswert | |
+| Firmierung | FS Kreativ Küchen |
+| Ort | Oberhaid bei Bamberg |
+| Inhaber | Felix, Vollzeit |
+| Verwaltung | Klara, Minijob ca. 25 Std./Woche — Verwaltung + Social-Media-Videoschnitt |
+| Montage | René (mit Thomas) Hauptteam, Robert (mit wechselnden Söhnen) — Subunternehmer |
+| Auslieferung | Manfred / Umzüge Simon, F+V Dienstleistungen — Subunternehmer |
+| Anfragen | ca. 2–3 pro Monat |
+| Küchen pro Monat | ca. 2–3 |
+| Typischer Auftragswert | ?? |
+| Engpass | **nicht** Beratung/Verkauf, sondern administrative Kapazität |
 
 ## 2. Kommissionen — das Wichtigste
 
-Eine Kommission ist ein Küchenauftrag. Jedes Dokument gehört zu genau einer.
+Eine Kommission ist ein Küchenauftrag. Jedes Dokument gehört zu genau einer. Die OneDrive-Ablage ist danach strukturiert.
 
 | Feld | Wert |
 |---|---|
-| Aufbau der Kommissionsnummer | z. B. `K-2026-041` — **echtes Muster hier eintragen** |
-| Wo steht sie auf Lieferantenrechnungen? | |
-| Wo steht sie auf Auftragsbestätigungen? | |
-| Vergibt sie der Betrieb oder der Hersteller? | |
-| Was gilt, wenn ein Dokument keine hat? | Vorschlag: nach „Manuell prüfen" |
+| Aufbau der Kommissionsnummer | **??** — echtes Muster eintragen, z. B. `K-2026-041` |
+| Wo steht sie auf Lieferantenrechnungen? | ?? |
+| Wo steht sie auf Auftragsbestätigungen? | ?? |
+| Vergibt sie der Betrieb oder der Hersteller? | ?? |
+| Wenn ein Dokument keine hat | über Kundenname + Datum versuchen, sonst nach „Manuell prüfen" |
 
-## 3. Ablage
+**Ohne dieses Muster kann kein Agent ein Dokument sicher zuordnen.** Das ist die erste Frage, die beantwortet sein muss.
+
+## 3. Ablage (OneDrive)
+
+Bestehende Struktur ist pro Kommission organisiert und bleibt unverändert. Neu kommen drei Sammelordner dazu.
 
 | Ordner | Pfad |
 |---|---|
-| Wurzel der Kommissionsordner | |
-| Eingang für neue Dokumente | |
-| Manuell prüfen | |
-| Register | |
-| Scan-Ordner des Druckers | |
+| Wurzel der Kommissionsordner | ?? |
+| Eingang für neue Dokumente | `00-Eingang` |
+| Manuell prüfen | `00-Manuell-pruefen` |
+| Register | `00-Register` |
+| Scan-Ordner des Druckers | ?? |
+
+Sync mit Klaras PC läuft über Synchting — an dieser Einrichtung ändert sich nichts.
 
 **Unterordner je Kommission** (bestehende Struktur eintragen, damit der Agent richtig ablegt):
 
 ```
 Kommission/
-├── ...
-├── ...
-└── ...
+├── ?? Rechnungen
+├── ?? Auftragsbestaetigungen
+├── ?? Lieferscheine
+├── ?? Planung
+└── ?? Bilder
 ```
 
 ## 4. Werkzeuge
 
 | Zweck | Programm | Zugang für den Agenten |
 |---|---|---|
-| Mail | | IMAP über den Provider, Zugangsdaten in `.env` |
-| Kalender | | |
-| Aufgaben/Wissen je Kunde | | |
-| Dateiablage | | |
-| Planung/Auftrag/Rechnung | | vermutlich keine Schnittstelle — siehe `docs/04-AGENTEN-FAHRPLAN.md`, Regel 7 |
-| Einnahmen-Ausgaben-Liste | | Agent schreibt nur in die Nachtragsdatei |
-| Kundenkommunikation | | kein automatisierter Versand |
+| Mail | Thunderbird, Provider Manitu — Ordnerfilter je Hersteller bestehen bereits | **IMAP direkt bei Manitu**, nicht über Thunderbird-Dateien. Zugangsdaten in `.env` |
+| Kalender | Google Kalender | API, später für den Fristen-Wächter |
+| Aufgaben/Wissen je Kunde | Notion — pro Kunde eine Seite mit To-Do-, Warte-auf-Rückmeldung-, Nachverkauf- und Vor-Auslieferung-Listen | API |
+| Dateiablage | OneDrive, Sync via Synchting | lokaler Dateizugriff auf dem Büro-PC |
+| Planung/Auftrag/Rechnung | CompuSoft Winner (Cyncly) — Bestellungen, Rechnungen, Kaufverträge | **vermutlich keine Schnittstelle.** Vor Planung schriftlich bei Cyncly anfragen. Siehe `docs/04-AGENTEN-FAHRPLAN.md` |
+| Einnahmen-Ausgaben-Liste | Excel / OpenOffice Calc | Agent schreibt **nur** in die Nachtragsdatei, nie direkt |
+| Auftragsliste | Excel / OpenOffice Calc | lesend |
+| Kundenkommunikation | WhatsApp Business | **kein automatisierter Versand** — Agent bereitet Texte vor |
+| Bildbearbeitung | GIMP | für Wasserzeichen später als Skript |
+| Video | CapCut | nicht automatisiert |
 
-## 5. Lieferanten und Hersteller
+## 5. Lieferanten und Portale
 
 Siehe `wissen/LIEFERANTEN-UND-PORTALE.md`.
 
-## 6. Schwellen und Regeln
+## 6. Fristen, Schwellen, Regeln
+
+Diese Tabelle ist die Grundlage für den Fristen-Wächter. Was hier steht, kann überwacht werden — was fehlt, nicht.
 
 | Regel | Wert |
 |---|---|
-| Bagatellgrenze bei Rechnungsabweichung | Vorschlag: 2 € |
-| Übliche Lieferzeit Küche | |
-| Bestellung muss spätestens erfolgen | Wochen vor Auslieferung: |
-| Aufmaß muss erfolgt sein | Wochen vor Bestellung: |
-| Anzahlung fällig | |
-| Restzahlung fällig | |
-| Erinnerung an Kunden vor Auslieferung | Tage vorher: |
-| Rückfrage bei Montage-/Auslieferpartner | Tage vorher: |
+| Bagatellgrenze bei Rechnungsabweichung | Vorschlag 2 € — **Felix bestätigen** |
+| Übliche Lieferzeit Küche | 6–8 Wochen |
+| Bestellung muss spätestens erfolgen | ?? Wochen vor Auslieferung |
+| Aufmaß muss erfolgt sein | ?? Wochen vor Bestellung |
+| Auslieferungsart klären | ca. 4 Wochen vorher (aus Notion-Praxis) |
+| Anzahlung fällig | ?? |
+| Restzahlung fällig | ?? |
+| Erinnerung an Kunden vor Auslieferung | ?? Tage vorher |
+| Rückfrage bei Montage-/Auslieferpartner | ?? Tage vorher |
+| Garantie-Anmeldung | bei 50–70 % der Küchen — Kriterium: ?? |
 
-Diese Tabelle ist die Grundlage für die Fristenüberwachung. Was hier steht, kann überwacht werden — was fehlt, nicht.
+## 7. Wer bekommt was
 
-## 7. Was der Betrieb bewusst nicht automatisiert
+| Was | An wen |
+|---|---|
+| Tagesbericht der Dokumentenroutine | ?? Felix, Klara oder beide |
+| Meldung bei Rechnungsabweichung | ?? |
+| Wochenrückblick | ?? |
 
-Damit niemand später auf die Idee kommt, es doch zu bauen — mit Begründung:
+## 8. Was bewusst nicht automatisiert wird
+
+Damit niemand später auf die Idee kommt, es doch zu bauen — Felix' eigene Begründungen:
 
 | Was | Warum nicht |
 |---|---|
-| Prüfung der Küchen-Auftragsbestätigung Position für Position | zu viele Einzelteile, erfordert Fachwissen, Fehler wären teuer |
-| Nachfassen nach einem Angebot | beziehungsabhängig, gehört zum Verkauf |
-| Anruf nach der Montage | bewusste persönliche Fürsorge |
-| Kommentieren in sozialen Medien | wirkt automatisiert unecht |
-| | |
+| Küchen-Auftragsbestätigung mit ~25 Einzelteilen Position für Position prüfen | zu hohes Fehlerpotenzial, erfordert Fachwissen |
+| Nachfassen nach einem Angebot | zu beziehungsabhängig, individuell |
+| Anruf nach der Montage beim Kunden | bewusste persönliche Fürsorge |
+| Lager-Fotos und Videos für Auslieferer | situativ vor Ort |
+| Kommentieren auf Instagram/TikTok für Sichtbarkeit | wirkt automatisiert unauthentisch |

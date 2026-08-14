@@ -8,13 +8,11 @@ Das ist keine Geschmacksfrage, sondern ergibt sich aus dem Betrieb: Die Dokument
 
 Das hat eine Konsequenz, die man wissen muss: **Der Rechner muss laufen, wenn die Routine feuern soll.** Wenn der Bürorechner abends aus ist, läuft nachts nichts. Deshalb legen wir die Routinen auf die Bürozeit (Vorschlag: 10:00 Uhr).
 
-## Schritt 1 — Eigene private Kopie anlegen
+## Schritt 1 — Repository privat stellen und klonen
 
-Diese Vorlage ist öffentlich. Die Arbeitskopie darf es nicht sein.
+Das Repository ist derzeit noch öffentlich und enthält bereits Betriebswissen. **Erster Schritt: auf privat umstellen** — GitHub → Settings → General → Danger Zone → Change visibility.
 
-1. Auf GitHub ein **neues privates Repository** anlegen, z. B. `fs-kreativ-firmengedaechtnis`.
-2. Inhalt dieser Vorlage hineinkopieren (Download als ZIP reicht — kein Fork, ein Fork eines öffentlichen Repos kann nicht privat gestellt werden).
-3. Auf dem Büro-PC in einen Ordner klonen, z. B. `C:\Firmengedaechtnis\`.
+Danach auf dem Büro-PC klonen, z. B. nach `C:\Firmengedaechtnis\`.
 
 Der Ordner sollte **nicht** in OneDrive liegen — OneDrive und Git kommen sich beim Synchronisieren in die Quere.
 
@@ -63,12 +61,12 @@ Vorgehen: erst ohne OCR testen, dann entscheiden. Ein Werkzeug, das man nicht br
 
 ## Schritt 7 — Zugangsdaten
 
-Alles, was ein Passwort braucht (Mailpostfach, später Lieferanten- und Steuerberaterportale), kommt in eine Datei `.env` im Repository-Ordner. Die steht in `.gitignore` und wird nie mit hochgeladen.
+Alles, was ein Passwort braucht (Manitu-Postfach, später Häcker Extranet, Trade Place, G4U, Agenda), kommt in eine Datei `.env` im Repository-Ordner. Die steht in `.gitignore` und wird nie mit hochgeladen.
 
 ```
-MAIL_IMAP_HOST=...
-MAIL_IMAP_USER=...
-MAIL_IMAP_PASS=...
+MANITU_IMAP_HOST=...
+MANITU_IMAP_USER=...
+MANITU_IMAP_PASS=...
 ```
 
 Passwörter niemals in eine `.md`-Datei schreiben und niemals in den Chat tippen.
@@ -84,7 +82,7 @@ Bevor ein Agent Dateien verschiebt oder umbenennt, läuft er im Trockenlauf: Er 
 - [ ] Ein unleserliches Dokument landet in `00-Manuell-pruefen` und nicht im Register als „fertig".
 - [ ] Ein Dokument ohne erkennbare Kommission landet in `00-Manuell-pruefen`.
 - [ ] Das Register enthält Quelle, Status und Prüfhinweis.
-- [ ] Nach jedem Lauf kommt eine kurze Zusammenfassung an.
+- [ ] Felix bekommt nach jedem Lauf eine kurze Zusammenfassung.
 - [ ] Beträge stehen in der Tabelle als Zahl, nicht als Text.
 
 Erst wenn alle sieben Haken sitzen, geht der Agent in Betrieb.

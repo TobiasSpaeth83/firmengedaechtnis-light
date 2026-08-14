@@ -1,6 +1,6 @@
 # Spielregeln — was Claude allein darf
 
-„Der Mensch behält die Freigabe für Buchhaltung und Zahlungen" ist richtig, aber zu eng. Für einen kleinen Betrieb, der von Empfehlungen und guten Bewertungen lebt, ist eine unpassende Nachricht an einen Kunden ein größerer Schaden als eine falsche Zeile in einer Tabelle.
+„Der Mensch behält die Freigabe für Buchhaltung und Zahlungen" ist richtig, aber zu eng. Für einen Betrieb, der von Empfehlungen und über 60 Fünf-Sterne-Bewertungen lebt, ist eine unpassende Nachricht an einen Kunden ein größerer Schaden als eine falsche Zeile in einer Tabelle.
 
 Deshalb drei Stufen.
 
@@ -19,12 +19,12 @@ Merkmal dieser Stufe: **Alles ist rückgängig zu machen und niemand außerhalb 
 
 ## Stufe B — vorbereiten ja, auslösen nein
 
-Claude bereitet vollständig vor und legt zur Freigabe vor. Ein Mensch drückt ab.
+Claude bereitet vollständig vor und legt zur Freigabe vor. Felix (oder Klara) drückt ab.
 
 - jede E-Mail an Kunden, Lieferanten, Subunternehmer, Steuerberater
 - jede WhatsApp-Nachricht
 - jede Bestellung, auch Nachbestellung eines Einzelteils
-- jede Eingabe in ein fremdes Portal (Lieferanten-Extranets, Garantieportale, Steuerberater-Upload)
+- jede Eingabe in ein fremdes Portal (Häcker Extranet, Trade Place, G4U/GFM, GarantieMax, Agenda)
 - jede Rechnung an einen Kunden
 - jede Terminzusage oder -verschiebung
 - alles, was auf der Website oder in sozialen Medien öffentlich wird

@@ -1,8 +1,8 @@
-# Firmengedächtnis light — Küchenstudio
+# Firmengedächtnis light — FS Kreativ Küchen
 
-Eine schlanke Vorlage, mit der ein kleiner Handwerks- oder Handelsbetrieb sein Betriebswissen festhält und Schritt für Schritt Routineaufgaben an Claude abgibt.
+Eine schlanke Grundlage, mit der das Küchenstudio sein Betriebswissen festhält und Schritt für Schritt Routineaufgaben an Claude abgibt.
 
-Zugeschnitten auf ein Küchenstudio mit Inhaber, Bürokraft und Montage-Subunternehmern — übertragbar auf ähnlich aufgestellte Betriebe.
+> ⚠️ **Dieses Repository muss noch auf privat gestellt werden.** Es enthält Betriebswissen, Namen von Mitarbeitern und Partnerbetrieben sowie die Lieferantenstruktur. Solange es öffentlich ist, keine Kundennamen, Beträge, Belege oder Zugangsdaten ergänzen. *(GitHub → Settings → General → Danger Zone → Change visibility)*
 
 ## Zwei Dinge in einem
 
@@ -31,14 +31,16 @@ wissen/            Betriebsprofil, Glossar, Lieferanten und Portale
 data/              Struktur des Dokumentenregisters (nur anonyme Beispiele)
 ```
 
-## Wichtig: diese Vorlage ist öffentlich
+## Was hier nicht hineingehört
 
-Dieses Repository ist für alle sichtbar. Es enthält **keine** Kundendaten, Namen von Mitarbeitern oder Partnerbetrieben, Belege, Zugangsdaten oder Links in private Ablagen — nur Anleitungen, Strukturen und erfundene Beispiele. Deshalb ist überall von „dem Inhaber" und „der Bürokraft" die Rede statt von Namen.
-
-**Die eigene Arbeitskopie muss privat sein.** Erst dort dürfen echte Betriebsdaten stehen. Wie das geht, steht in [docs/02-EINRICHTUNG.md](docs/02-EINRICHTUNG.md), Schritt 1.
+Kaufverträge, Rechnungen, Scans, Kundendaten und Zugangsdaten. Die bleiben in OneDrive, Notion und im Passwortmanager. Hier stehen nur Regeln, Strukturen und erfundene Beispiele — auch nachdem das Repository privat ist.
 
 ## Zielprozess der ersten Ausbaustufe
 
 `Dokument kommt rein` → `Claude liest es` → `Kommission zuordnen` → `gegen Auftragsbestätigung prüfen` → `Register + Ablage` → `Tagesbericht`
 
 Unklare Fälle gehen nie durch, sondern nach „Manuell prüfen".
+
+## Nächster offener Punkt
+
+Das Betriebsprofil in [wissen/BETRIEB.md](wissen/BETRIEB.md) ausfüllen — vor allem der **Aufbau der Kommissionsnummern**. Ohne das kann kein Agent ein Dokument zuordnen.

@@ -8,7 +8,7 @@ Claude ist ein Assistent, der auf deinem PC Dateien lesen und schreiben darf. Du
 
 ## Was sich dadurch ändern soll
 
-Der Engpass in einem Studio dieser Größe ist selten der Verkauf, sondern die Verwaltung. Rund 10–15 Lieferantenrechnungen im Monat, 2–15 Scans die Woche, täglich Post im Mailprogramm — das kostet Stunden, die keine Küche verkaufen. Genau diese Masse ist das Ziel. Nicht die schicken Sachen wie WhatsApp-Bots.
+Dein Engpass ist nicht der Verkauf, sondern die Verwaltung. 10–15 Lieferantenrechnungen im Monat, 2–15 Scans die Woche, täglich Post im Thunderbird — das kostet dich und Klara Stunden, die keine Küche verkaufen. Genau diese Masse ist das Ziel. Nicht die schicken Sachen wie WhatsApp-Bots.
 
 ## Die vier Bausteine
 
@@ -23,11 +23,11 @@ Wichtig: **An deiner Ablage ändert sich nichts.** OneDrive bleibt OneDrive, Not
 
 ## Ablauf des ersten Tages
 
-### Schritt 1 — Repository kopieren (10 Min)
+### Schritt 1 — Repository privat stellen und klonen (10 Min)
 
-Eigene, **private** Kopie anlegen. Anleitung: [02-EINRICHTUNG.md](02-EINRICHTUNG.md), Schritt 1.
+Anleitung: [02-EINRICHTUNG.md](02-EINRICHTUNG.md), Schritt 1.
 
-Warum privat: Ab jetzt stehen dort deine Lieferanten, deine Abläufe, deine Entscheidungen. Das geht niemanden etwas an.
+Warum privat: Hier stehen deine Lieferanten, deine Abläufe, deine Entscheidungen. Das geht niemanden etwas an.
 
 ### Schritt 2 — Betriebsprofil ausfüllen (30 Min)
 
