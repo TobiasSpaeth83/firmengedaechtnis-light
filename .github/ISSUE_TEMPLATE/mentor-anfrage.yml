@@ -1,0 +1,58 @@
+name: Mentor-Anfrage
+description: Frage von Felix an Tobias' Mentor-Agenten
+title: "[Mentor] "
+labels:
+  - connector:frage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte keine Kunden-, Vertrags-, Preis- oder Zugangsdaten eintragen.
+        Die Anfrage ist zunächst eine Frage und löst keine Systemänderung aus.
+
+  - type: textarea
+    id: frage
+    attributes:
+      label: Frage
+      description: Was möchtest du wissen oder verbessern?
+      placeholder: Wie kann ich ...?
+    validations:
+      required: true
+
+  - type: textarea
+    id: ausgangslage
+    attributes:
+      label: Ausgangslage
+      description: Welche Werkzeuge, Abläufe und Einschränkungen sind relevant?
+      placeholder: Der Büro-PC läuft ..., die Dateien liegen ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ergebnis
+    attributes:
+      label: Gewünschtes Ergebnis
+      options:
+        - Erklärung
+        - Checkliste
+        - Routinevorlage
+        - Technischer Plan
+        - Prüfung eines vorhandenen Entwurfs
+    validations:
+      required: true
+
+  - type: textarea
+    id: bereits_versucht
+    attributes:
+      label: Bereits versucht
+      description: Optional – was hast du schon ausprobiert und was ist passiert?
+
+  - type: checkboxes
+    id: sicherheit
+    attributes:
+      label: Datenschutz und Freigabe
+      options:
+        - label: Die Anfrage enthält keine Kunden-, Vertrags-, Preis- oder Zugangsdaten.
+          required: true
+        - label: Mir ist klar, dass die Antwort zunächst eine Empfehlung und keine automatisch ausgeführte Änderung ist.
+          required: true
