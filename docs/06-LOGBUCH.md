@@ -12,6 +12,7 @@ Was am Ablauf geändert wurde und warum. Die ersten Zeilen sind die Grundentsche
 
 | Datum | Entscheidung | Grund |
 |---|---|---|
+| 2026-09-22 | `firmengedaechtnis-light` erhält einen getrennten Mentor-Connector für den Austausch zwischen Felix und Tobias' Agentensystem | Felix kann erprobte Routinen und Betriebswissen erfragen, ohne Zugriff auf Tobias' vollständiges Firmengedächtnis oder dessen Zugangsdaten zu erhalten; der Start erfolgt manuell und ohne gespeicherte Agenten-Secrets |
 | 2026-08-14 | Claude läuft lokal auf dem Büro-PC, nicht als Cloud-Sitzung | Eine Cloud-Sitzung sieht weder OneDrive noch das Mailprogramm noch den Scan-Ordner |
 | 2026-08-14 | Auslöser der Routinen ist die Windows-Aufgabenplanung | einzige Variante, die ohne zusätzliche Dienste auskommt und auf dem Rechner läuft, auf dem die Dateien liegen |
 | 2026-08-14 | WhatsApp-Versand wird nicht automatisiert; der Agent legt stattdessen fertige Texte zur Freigabe vor | WhatsApp Business hat keine Schnittstelle; die Cloud API von Meta wäre für wenige Nachrichten im Monat unverhältnismäßig und würde die gewohnte Nutzung der Rufnummer verändern |

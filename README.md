@@ -20,6 +20,7 @@ Beides gehört zusammen: Eine Automatisierung ohne Gedächtnis muss man jedes Ma
 | wissen willst, wie „täglich um 10 Uhr" real wird | [docs/03-ROUTINEN-EINRICHTEN.md](docs/03-ROUTINEN-EINRICHTEN.md) |
 | wissen willst, was wann automatisiert wird | [docs/04-AGENTEN-FAHRPLAN.md](docs/04-AGENTEN-FAHRPLAN.md) |
 | wissen willst, was Claude allein darf | [docs/05-SPIELREGELN.md](docs/05-SPIELREGELN.md) |
+| Tobias' Mentor-Agenten eine Frage stellen willst | [connector/README.md](connector/README.md) |
 
 ## Aufbau
 
@@ -29,7 +30,19 @@ docs/              Anleitung, Fahrplan, Spielregeln, Logbuch
 agenten/           Steckbriefe der einzelnen Agenten (einer pro Aufgabe)
 wissen/            Betriebsprofil, Glossar, Lieferanten und Portale
 data/              Struktur des Dokumentenregisters (nur anonyme Beispiele)
+connector/         Austauschkanal zwischen Felix und Tobias' Mentor-Agenten
 ```
+
+## Mentor-Connector
+
+Der Ordner [`connector/`](connector/README.md) beschreibt den gemeinsamen
+Nachrichtenkanal. Fragen werden als GitHub-Issue gestellt. Antworten und
+gemeinsame Vorlagen bleiben dadurch nachvollziehbar, ohne Felix Zugriff auf
+Tobias' vollständiges Firmengedächtnis zu geben.
+
+Der Connector ist derzeit **manuell**: Ein Issue weckt noch keinen Agenten
+automatisch. Zugangsdaten für Claude, GitHub, Hermes oder Oswald gehören niemals
+in dieses Repository.
 
 ## Was hier nicht hineingehört
 
