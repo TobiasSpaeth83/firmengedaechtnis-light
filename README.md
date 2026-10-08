@@ -21,6 +21,7 @@ Beides gehört zusammen: Eine Automatisierung ohne Gedächtnis muss man jedes Ma
 | wissen willst, was wann automatisiert wird | [docs/04-AGENTEN-FAHRPLAN.md](docs/04-AGENTEN-FAHRPLAN.md) |
 | wissen willst, was Claude allein darf | [docs/05-SPIELREGELN.md](docs/05-SPIELREGELN.md) |
 | Tobias' Mentor-Agenten eine Frage stellen willst | [connector/README.md](connector/README.md) |
+| wissen willst, welcher Agent wo erreichbar ist | [connector/AGENTEN-REGISTER.md](connector/AGENTEN-REGISTER.md) |
 
 ## Aufbau
 
