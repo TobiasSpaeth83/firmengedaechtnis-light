@@ -12,6 +12,7 @@ Was am Ablauf geändert wurde und warum. Die ersten Zeilen sind die Grundentsche
 
 | Datum | Entscheidung | Grund |
 |---|---|---|
+| 2026-10-08 | Git-Arbeitsweise festgelegt (`docs/07-GIT-ARBEITSWEISE.md`): jede Sitzung startet mit `git pull --rebase origin main`, Änderungen nur über Branch + PR, Wissen merged Claude selbst, Regeln/Routinen erst nach Felix' kurzer Freigabe | gleicher Stand für alle Agenten; Arbeitsweise aus Tobias' Firmengedächtnis übernommen und an die Spielregeln angepasst |
 | 2026-10-08 | Agenten-Register `connector/AGENTEN-REGISTER.md` eingeführt; jeder Agent trägt sich ein und hat einen eigenen Briefkasten-PR (nie gemergt). Mentor heißt Jakob (J1), Briefkasten #5 | Anfragen vom 02.10. und 07.10. blieben liegen, weil ein Issue niemanden weckt und unklar war, wer wo erreichbar ist |
 | 2026-09-22 | `firmengedaechtnis-light` erhält einen getrennten Mentor-Connector für den Austausch zwischen Felix und Tobias' Agentensystem | Felix kann erprobte Routinen und Betriebswissen erfragen, ohne Zugriff auf Tobias' vollständiges Firmengedächtnis oder dessen Zugangsdaten zu erhalten; der Start erfolgt manuell und ohne gespeicherte Agenten-Secrets |
 | 2026-08-14 | Claude läuft lokal auf dem Büro-PC, nicht als Cloud-Sitzung | Eine Cloud-Sitzung sieht weder OneDrive noch das Mailprogramm noch den Scan-Ordner |

@@ -19,6 +19,7 @@ Beides gehört zusammen: Eine Automatisierung ohne Gedächtnis muss man jedes Ma
 | es technisch einrichten willst | [docs/02-EINRICHTUNG.md](docs/02-EINRICHTUNG.md) |
 | wissen willst, wie „täglich um 10 Uhr" real wird | [docs/03-ROUTINEN-EINRICHTEN.md](docs/03-ROUTINEN-EINRICHTEN.md) |
 | wissen willst, was wann automatisiert wird | [docs/04-AGENTEN-FAHRPLAN.md](docs/04-AGENTEN-FAHRPLAN.md) |
+| wissen willst, wie Änderungen ins Gedächtnis kommen (Git) | [docs/07-GIT-ARBEITSWEISE.md](docs/07-GIT-ARBEITSWEISE.md) |
 | wissen willst, was Claude allein darf | [docs/05-SPIELREGELN.md](docs/05-SPIELREGELN.md) |
 | Tobias' Mentor-Agenten eine Frage stellen willst | [connector/README.md](connector/README.md) |
 | wissen willst, welcher Agent wo erreichbar ist | [connector/AGENTEN-REGISTER.md](connector/AGENTEN-REGISTER.md) |
