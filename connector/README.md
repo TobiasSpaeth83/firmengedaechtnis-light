@@ -8,14 +8,17 @@ für Felix freizugeben.
 ## So funktioniert eine Anfrage
 
 1. Felix eröffnet über die Vorlage **Mentor-Anfrage** ein GitHub-Issue.
-2. Tobias oder sein Mentor-Agent prüft die Anfrage und schlägt intern nach.
-3. Die Antwort wird auf vertrauliche Angaben geprüft und im Issue veröffentlicht.
-4. Wiederverwendbare Vorlagen kommen als Pull Request in `connector/vorlagen/`.
-5. Felix entscheidet selbst, ob und wie er die Empfehlung in seinem Betrieb
+2. Felix' Claude schreibt danach einen Kommentar in den Briefkasten des Mentors
+   (`📬 An: J1 · Von: <Kürzel> — neue Anfrage #<Nummer>`). Wo der Briefkasten liegt, steht im
+   [Agenten-Register](AGENTEN-REGISTER.md). Erst dieser Kommentar weckt den Mentor.
+3. Tobias' Mentor-Agent Jakob (J1) prüft die Anfrage und schlägt intern nach.
+4. Die Antwort wird auf vertrauliche Angaben geprüft und im Issue veröffentlicht.
+5. Wiederverwendbare Vorlagen kommen als Pull Request in `connector/vorlagen/`.
+6. Felix entscheidet selbst, ob und wie er die Empfehlung in seinem Betrieb
    übernimmt.
 
-Derzeit erfolgt die Zustellung **manuell**. Ein GitHub-Issue startet noch keinen
-Agenten automatisch. Eine spätere Oswald-/Hermes-Anbindung muss den gleichen
+Ein GitHub-Issue allein startet keinen Agenten. Geweckt wird über den
+Briefkasten-PR des Empfängers (siehe Register). Eine spätere Oswald-/Hermes-Anbindung muss den gleichen
 Regeln folgen und erhält keine Zugangsdaten in diesem Repository.
 
 ## Was der Connector kann
@@ -39,6 +42,8 @@ Beispielanfrage steht in [BEISPIEL-ANFRAGE.md](BEISPIEL-ANFRAGE.md).
 
 ## Ordner
 
+- `AGENTEN-REGISTER.md` – wer ist wer, Briefkästen, wie man sich einträgt
+- `briefkasten/` – Kurzbeschreibung je Briefkasten (liegt auf dem jeweiligen Briefkasten-Branch)
 - `antworten/` – dauerhafte, bereinigte Antworten mit allgemeinem Nutzen
 - `vorlagen/` – gemeinsam geprüfte Checklisten, Prompts und Routinevorlagen
 
