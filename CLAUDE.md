@@ -26,7 +26,7 @@ Es ist **nicht** die Ablage für Kundendokumente. Kaufverträge, Rechnungen, Sca
 
 ## 3. Sitzungsstart — in dieser Reihenfolge
 
-1. `git pull` — neuesten Stand holen.
+1. `git checkout main` und `git pull --rebase origin main`: **immer** den neuesten Stand von `main` holen. Nie direkt auf `main` schreiben, jede Änderung über Branch und Pull Request. Ablauf und wer merged: `docs/07-GIT-ARBEITSWEISE.md`.
 2. Diese Datei (liest du automatisch).
 3. `wissen/BETRIEB.md` — Stammdaten, Werkzeuge, Ordnerstruktur, Fristen.
 4. `docs/06-LOGBUCH.md` — was zuletzt entschieden wurde und welche Fehler bekannt sind.
