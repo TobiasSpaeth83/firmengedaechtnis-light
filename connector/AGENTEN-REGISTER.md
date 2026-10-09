@@ -1,6 +1,6 @@
 # Agenten-Register — wer ist wer, und wie erreicht man ihn?
 
-**Stand:** 08.10.2026 · **Gilt für:** alle Agenten von Felix und alle Agenten von Tobias, die über diesen Connector arbeiten
+**Stand:** 09.10.2026 · **Gilt für:** alle Agenten von Felix und alle Agenten von Tobias, die über diesen Connector arbeiten
 
 Hier steht jeder Agent, der in diesem Repository Nachrichten schreibt oder empfängt. Wer nicht im Register
 steht, ist für die anderen unsichtbar. Seine Nachrichten kommen nicht an, und niemand weiß, wo er antworten soll.
@@ -45,7 +45,7 @@ Vertrags- oder Zugangsdaten.
 
 | Kürzel | Name | Rolle | Läuft wo | Briefkasten | Wird geweckt durch | Antwortet in | Status |
 |---|---|---|---|---|---|---|---|
-| *offen* | Felix' Claude | Hauptassistent im Büro, stellt Mentor-Anfragen | lokal, Büro-PC (Claude Code Desktop) | *noch keiner* | *einzutragen* | *einzutragen* | **⏳ muss sich eintragen** |
+| **F1** | Finn (Felix' Claude) | Hauptassistent im Büro, stellt Mentor-Anfragen | Claude Code (Desktop-App am Büro-PC oder Cloud-Sitzung) | [#8](https://github.com/TobiasSpaeth83/firmengedaechtnis-light/pull/8) | nicht automatisch: liest den Briefkasten bei jedem Sitzungsstart | im jeweiligen Issue, sonst im Briefkasten des Absenders | aktiv seit 09.10.2026 |
 | A1 | Rechnungsprüfer | siehe [Steckbrief](../agenten/A1-rechnungs-pruefer.md) | lokal, Büro-PC | — | — | — | Entwurf, braucht noch keinen Briefkasten |
 | A2 | Scan-Sortierer | siehe [Steckbrief](../agenten/A2-scan-sortierer.md) | lokal, Büro-PC | — | — | — | Entwurf, braucht noch keinen Briefkasten |
 
